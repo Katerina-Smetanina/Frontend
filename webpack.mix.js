@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+const { resolve } = require('path');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,7 +12,7 @@ const mix = require('laravel-mix');
  |
  */
 
-mix 
+mix
     .setPublicPath('public')
     .js('resources/scripts/main.js', 'build/bundle.js')
     .sass('resources/styles/main.scss', 'build/bundle.css')
@@ -20,6 +21,8 @@ mix
         files: [
             'public/**/*',
             'resources/**/*.twig',
-            'resources/**/*.php',   
+            'resources/**/*.php',
         ],
     });
+
+mix.alias({'uikit-util': resolve(__dirname, 'node_modules/uikit/src/js/util')});

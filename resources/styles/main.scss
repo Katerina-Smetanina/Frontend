@@ -1,17 +1,18 @@
+@import "./uikit.scss";
 @import "../layouts/base.scss";
 
-$primary: red;
-$secondary: blue;
+$primary: blue;
 
-body{
-    font-family: 'Open Sans' , 'sans-serif';
+body {
+    font-family: 'Open Sans', sans-serif;
 }
 
-.hello{
+h1 {
     color: $primary;
-    font-family: 'Montserrat';
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.loren{
-    color: $secondary;
+a {
+    color: red;
 }

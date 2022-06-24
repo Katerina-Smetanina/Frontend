@@ -1,3 +1,2 @@
-require('./bootstrap');
-
-console.log('hello');
+import './uikit';
+console.log("Hello, world!");
