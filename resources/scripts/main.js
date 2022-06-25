@@ -1,2 +1,2 @@
 import './uikit';
-console.log("Hello, world!");
+import './swiper';
